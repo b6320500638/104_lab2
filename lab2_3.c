@@ -3,10 +3,8 @@ int main()
 {
     int max,min,mid,a,b,c;
     char eng[3];
-
     scanf("%d %d %d",&a,&b,&c);
-        gets(eng);
-    if(a<100&&b<100&&c<100)
+    if(a>0&&a<100&&b>0&&b<100&&c>0&&c<100)
     {
     int num[3]={a,b,c};
     min=num[0];max=num[0];
@@ -31,6 +29,7 @@ int main()
      a=min;
      b=mid;
      c=max;
+    scanf("%s",&eng);
     if(eng[0]=='A'&&eng[1]=='B'&&eng[2]=='C')
     {
         printf("%d ",a);
@@ -75,12 +74,12 @@ int main()
     }
     }
     return 0;
-}
-/*#include<stdio.h>
+}/*
+#include<stdio.h>
 int main()
 {
     int max,min,mid,a,b,c;
-    char eng[3],z;
+    char eng[3],z[3];
     scanf("%d %d %d",&a,&b,&c);
     if(a<100&&b<100&&c<100)
     {
